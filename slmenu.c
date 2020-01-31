@@ -99,6 +99,7 @@ void calcoffsets(void) {
 
 void cleanup() {
 	if (barpos==0) {
+		fprintf(stderr, "\033[G\033[K\033[1A\033[K\033[1B");
 		fprintf(stderr, "\n");
 	} else {
 		fprintf(stderr, "\033[G\033[K");
